@@ -1,22 +1,27 @@
-
-
-/*
-General colors 
-*/
+/*************************
+    General Colors 
+***************************/
 :root {
   --background-color: #0275d8;
   --sec-col:rgba(247, 247, 247, 0.925);
+  --white:#fff;
+  --black:#000;
 }
 
-/*
-General style 
-*/
+/*************************
+    General style 
+***************************/
 
 * {
   text-align: right;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--background-color);
+  font-family: 'Cairo', sans-serif;
+ 
 }
 .box-container {
   padding: 20px;
@@ -27,25 +32,47 @@ body {
 }
 .heading {
   font-size: 35px;
-  margin:40px 0
+  margin:40px 0;
+  font-weight:700;
+  color:var(--white);
 }
-.logo-image {
-  width:80px;
+
+/*************************
+    Header style 
+***************************/
+
+header {
+      height:70vh;
+      background-image: url('/images/wallpaper.jpg');
+      background-repeat: repeat;
+      background-size: cover;
 }
-nav {
-  font-size: 20px;
+
+.logo-image {width:80px}
+
+nav {font-size: 20px;}
+
+.background {
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/*overlay on slider*/
-.carousel-item:after {
-  content:"";
-  display:block;
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background:rgba(0,0,0,0.7);
+.background .col{
+  margin: 0 20px;
+  width:250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.background .playstor-ico {width:200px;}
+
+ .background .animated-image {
+   width:200px;
+   transition:all .3s linear;
+   animation: bounce 2s ease-in-out infinite;
+ }
 
 /*استخدام الابلكيشن*/
 .mob-screen {
@@ -53,16 +80,12 @@ nav {
 }
 
 /*تحميل الابلكيشن*/
-.col-sm-6 {
-  text-align: center;
-}
-.img-ta7mel , .btn-7gz {
-  width:50%;
-  
-}
-.btn-7gz {
-  height: 100%;
-  font-size:20px;
+.etsal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  text-align: left;
 }
 /*footer*/
 
@@ -74,6 +97,9 @@ footer {
   color:var(--sec-col);
   font-size:25px;
 }
+.social:hover {
+  color:var(--white)
+}
 .copy-right {
   margin:15px 0 0;
   padding:20px 0;
@@ -81,3 +107,26 @@ footer {
   background-color:  rgba(36, 33, 33, 0.514);
   font-size:20px;
 }
+
+footer .telephone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:25px;
+  color:var(--white)
+}
+
+/*key frams*/
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  } 
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
