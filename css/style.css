@@ -1,0 +1,83 @@
+
+
+/*
+General colors 
+*/
+:root {
+  --background-color: #0275d8;
+  --sec-col:rgba(247, 247, 247, 0.925);
+}
+
+/*
+General style 
+*/
+
+* {
+  text-align: right;
+}
+body {
+  background-color: var(--background-color);
+}
+.box-container {
+  padding: 20px;
+  margin: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px  var(--background-color);
+  background-color: var(--sec-col);
+}
+.heading {
+  font-size: 35px;
+  margin:40px 0
+}
+.logo-image {
+  width:80px;
+}
+nav {
+  font-size: 20px;
+}
+/*overlay on slider*/
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.7);
+}
+
+/*استخدام الابلكيشن*/
+.mob-screen {
+  width:100%;
+}
+
+/*تحميل الابلكيشن*/
+.col-sm-6 {
+  text-align: center;
+}
+.img-ta7mel , .btn-7gz {
+  width:50%;
+  
+}
+.btn-7gz {
+  height: 100%;
+  font-size:20px;
+}
+/*footer*/
+
+footer {
+  background-color: rgba(44, 41, 41, 0.514);
+}
+.social {
+  margin: 0 20px;
+  color:var(--sec-col);
+  font-size:25px;
+}
+.copy-right {
+  margin:15px 0 0;
+  padding:20px 0;
+  color:var(--sec-col);
+  background-color:  rgba(36, 33, 33, 0.514);
+  font-size:20px;
+}
