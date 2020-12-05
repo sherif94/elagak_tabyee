@@ -19,7 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: url('/images/wallpaper.jpg');
+  background-image: url(../images/wallpaper.jpg);
   background-size: cover;
   font-family: 'Cairo', sans-serif;;
 }
@@ -27,6 +27,7 @@ body {
 div {
   color:var(--black);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;

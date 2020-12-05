@@ -24,6 +24,7 @@ html {
 body {
   background-color: var(--background-color);
   font-family: 'Cairo', sans-serif;
+  line-height: 1.7;
 }
 /* the White box */
 .box-container {
@@ -128,7 +129,7 @@ footer .telephone {
     transform: scale(1);
   } 
   50% {
-    transform: scale(1.5);
+    transform: scale(1.15);
   }
   100% {
     transform: scale(1);
@@ -139,18 +140,15 @@ footer .telephone {
 Some media Query for icon and animation icon and google play icone and som heading
 **************/
 
+@media (max-width: 640px) 
+{
+    #image-bou
+    {
+        display: none;
+    }
+}
+
 @media (max-width: 540px) {
-    .background .playstor-ico {width:100px;}
-
-    .background .animated-image {
-      width:100px;
-      transition:all .3s linear;
-      animation: bounce 2s ease-in-out infinite;
-    }
-
-    .headt {
-      font-size: 16px;
-    }
     .logo-image {width:60px}
 
     .heading {
@@ -162,14 +160,4 @@ Some media Query for icon and animation icon and google play icone and som headi
 
 }
 
-@media (max-width: 280px) {
-  .background .playstor-ico {width:70px;}
-  
-   .background .animated-image {
-     width:50px;
-   }
-   .headt {
-    font-size: 14px;
-  }
-}
 
