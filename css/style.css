@@ -42,6 +42,10 @@ body {
   color:var(--white);
 }
 
+.etslNow {
+     font-size:20px; 
+} 
+
 /*************************
     Header style 
 ***************************/
@@ -146,6 +150,10 @@ Some media Query for icon and animation icon and google play icone and som headi
     {
         display: none;
     }
+    
+    .headt {
+         font-size: 16px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -158,6 +166,7 @@ Some media Query for icon and animation icon and google play icone and som headi
       color:var(--white);
     }
 
+    
 }
 
 
